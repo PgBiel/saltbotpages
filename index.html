@@ -31,7 +31,8 @@
       <div class="btn-group" role="group" aria-label="...">
         <a class="btn btn-primary btn-lg" href="invite.html" role="button">Invite</a>
         <a class="btn btn-success btn-lg" href="discordinvite.html" role="button">Discord Server</a>
-        <a class="btn btn-warning btn-lg" href="#authors" role="button" onclick="disabledOnClick(this)">Authors</a>
+        <button type="button" class="btn btn-warning btn-lg" onclick="window.location = window.location.replace(/#.+$/, '') + '#authors'">Authors</button>
+        <!-- <a class="btn btn-warning btn-lg" href="#authors" role="button" onclick="disabledOnClick(this)">Authors</a> -->
       </div>
     </div>
     <div id="authors" class="pp-overlay">
