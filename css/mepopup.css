@@ -7,11 +7,13 @@
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
+  z-index: initial;
   opacity: 0;
 }
 .pp-overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 6000;
 }
 
 .pp-popup {
