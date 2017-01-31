@@ -63,4 +63,5 @@ window.getAnnouncements = function() {
     }
   };
   xhttp.open("GET", "announcements.json", true);
+  xhttp.send();
 };
