@@ -22,6 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- showdown js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js"></script>
     <!-- Main script file -->
     <script src="js/scriptz.js"></script>
     <div class="jumbotron" align="center">
@@ -31,7 +33,7 @@
       <div class="btn-group" role="group" aria-label="...">
         <a class="btn btn-primary btn-lg" href="invite.html" role="button">Invite</a>
         <a class="btn btn-success btn-lg" href="discordinvite.html" role="button">Discord Server</a>
-        <button type="button" class="btn btn-warning btn-lg" onclick="window.location = /*window.location.replace(/#.+$/, '') + */'#authors'">Authors</button>
+        <button type="button" class="btn btn-warning btn-lg" onclick="window.location = '#authors'">Authors</button>
         <!-- <a class="btn btn-warning btn-lg" href="#authors" role="button" onclick="disabledOnClick(this)">Authors</a> -->
       </div>
     </div>
@@ -45,5 +47,11 @@
         </div>
       </div>
     </div>
+    <h1>Announcements</h1>
+    <div class="alert alert-info" id="theloader" role="alert">Loading...</div>
+    <div id="announcements"></div>
+    <script>
+      $(getAnnouncements);
+    </script>
   </body>
 </html>
