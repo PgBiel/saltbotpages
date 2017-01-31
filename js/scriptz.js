@@ -15,7 +15,7 @@ function XHR() {
   }
 }
 
-function getAnnouncements() {
+window.getAnnouncements = function() {
   var xhttp = XHR();
   var loader = $("#theloader");
   var announcements = $("#announcements");
