@@ -107,4 +107,8 @@ window.getMessages = function() {
   xhttp.send();
 };
 
-$("#salt-message")[0].addEventListener("click", getMessages);
+function pgThings() {
+  $("#back").attr("href", window.location.origin);
+}
+
+$("#salt-message")[0]?$("#salt-message")[0].addEventListener("click", getMessages):"";
