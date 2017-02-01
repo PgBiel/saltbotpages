@@ -72,6 +72,19 @@
   }
 }
 
+@keyframes fade-inski {
+  from {
+    opacity: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
 @keyframes pulse {
   from {
     margin: 7px 7px 7px 60px;
@@ -84,7 +97,7 @@
 }
 
 * { 
-  animation-name: fade-in;
+  animation-name: fade-inski;
   animation-duration: 2s;
 }
 
