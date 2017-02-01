@@ -78,5 +78,9 @@
 }
 
 code {
-  font-family: Inconsolata, "monospace";
+  font-family: "Inconsolata", monospace;
+}
+
+.announcement-title {
+  font-family: "Bahiana", cursive;
 }
