@@ -36,7 +36,7 @@ window.getAnnouncements = function() {
         }, 5000);
       }
       if (ann) {
-        _.takeRight(ann, 25);
+        _.take(ann, 25);
         var sh = new showdown.Converter({
           simplifiedAutoLink: true,
           excludeTrailingPunctuationFromURLs: true,
@@ -47,14 +47,15 @@ window.getAnnouncements = function() {
           simpleLineBreaks: true
         });
         ann.map(o => {
-          o.title   = sh.makeHtml(o.title);
+          o.rawTitle = o.title;
+          o.title   = document.createElement("h1");
+          o.title.setAttribute("class", "announcement-title");
+          o.title.innerHTML = o.rawTitle;
           o.content = sh.makeHtml(o.content);
         });
         ann.map(o => {
           var dummy = document.createElement("div");
-          dummy.innerHTML = o.title;
-          dummy.children[0].setAttribute("class", "announcement-title");
-          announcements.html(announcements.html() + "\n\n" + dummy.children[0].outerHTML);
+          announcements.html(announcements.html() + "\n\n" + o.title.outerHTML);
           announcements.html(announcements.html() + "\n" + o.content);
         });
         loader.html("Loaded announcements!");
