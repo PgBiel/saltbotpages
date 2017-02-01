@@ -108,7 +108,8 @@ window.getMessages = function() {
 };
 
 function pgThings() {
-  $("#back").attr("href", window.location.origin);
+  var origin = window.location.origin;
+  $("#back").attr("href", origin+(/\/$/.test(origin)?"saltbotpages":"/saltbotpages"));
 }
 
 $("#salt-message")[0]?$("#salt-message")[0].addEventListener("click", getMessages):"";
