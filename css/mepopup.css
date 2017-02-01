@@ -72,6 +72,15 @@
   }
 }
 
+@keyframes pulse {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 5px;
+  }
+}
+
 * { 
   animation-name: fade-in;
   animation-duration: 2s;
@@ -119,6 +128,13 @@ code {
   margin-left: 60px;
   border-radius: 10px;
   cursor: pointer;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  animation-name: pulse;
+  animation-timing-function: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .pulse-button:hover {
