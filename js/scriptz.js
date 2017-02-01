@@ -102,7 +102,14 @@ window.getMessages = function() {
         messages = ann;
         message.innerHTML = _.sample(messages);
         $("#salt-message")[0] ? $("#salt-message")[0].addEventListener("click", function() {
-          $("#salt-message")[0].innerHTML = _.sample(messages);
+          theMessage = $("#salt-message")[0];
+          theMessage.setAttribute("class", "salt-message fade-in-out");
+          setTimeout(function() {
+            theMessage.innerHTML = _.sample(messages);
+          }, 1000);
+          setTimeout(function() {
+            theMessage.setAttribute("class", "salt-message");
+          }, 2000);
         }) : "";
       }
     } else if (this.status !== 200 && this.readyState == 4) {
