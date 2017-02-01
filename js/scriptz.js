@@ -36,7 +36,7 @@ window.getAnnouncements = function() {
         }, 5000);
       }
       if (ann) {
-        _.take(ann, 25);
+        ann = _.take(ann, 25);
         var sh = new showdown.Converter({
           simplifiedAutoLink: true,
           excludeTrailingPunctuationFromURLs: true,
