@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salt Discord Bot</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Patua+One" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main css file -->
+    <link href="css/mepopup.css" rel="stylesheet">
+    
+    <!-- Icon -->
+    <link href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Salt_shaker_on_white_background.jpg/220px-Salt_shaker_on_white_background.jpg" rel="icon">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- showdown js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js"></script>
+    <!-- lodash -->
+    <script src="js/lodash.js"></script>
+    <!-- Moment -->
+    <script src="js/moment.js"></script>
+    <!-- Load all announcements -->
+    <script src="js/loadAllAnnouncements.js"></script>
+    <div class="announcement-header"><h1>Announcements</h1></div>
+    <div class="alert alert-info" id="theloader" role="alert">Loading...</div>
+    <div id="announcements" style="padding-left: 70px;"></div>
+    <a href="announcements.html">
+      <button class="pulse-button" id="view-all">View all announcements!</button>
+    </a>
+    <script>
+      $(function(){
+        getAnnouncements();
+      }); 
+    </script>
+  </body>
+</html>
