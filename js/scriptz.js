@@ -51,10 +51,13 @@ window.getAnnouncements = function() {
           o.title   = document.createElement("h1");
           o.title.setAttribute("class", "announcement-title");
           o.title.innerHTML = o.rawTitle;
+          o.description = document.createElement("span");
+          o.description.setAttribute("class", "announcement-description");
+          o.description.innerHTML = o.poster + " posted this " + moment(o.timestamp).fromNow() + moment(o.timestamp).format(" on MMMM Mo, \\at h:mm a");
+          o.title.appendChild(o.description);
           o.content = sh.makeHtml(o.content);
         });
         ann.map(o => {
-          var dummy = document.createElement("div");
           announcements.html(announcements.html() + "\n\n" + o.title.outerHTML);
           announcements.html(announcements.html() + "\n" + o.content);
         });
