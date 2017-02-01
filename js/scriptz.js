@@ -58,8 +58,10 @@ window.getAnnouncements = function() {
           o.content = sh.makeHtml(o.content);
         });
         ann.map(o => {
-          announcements.html(announcements.html() + "\n\n" + o.title.outerHTML);
-          announcements.html(announcements.html() + "\n" + o.content);
+          var container = document.createElement("div");
+          container.setAttribute("class", "announcement-container");
+          container.innerHTML = o.title.outerHTML + "\n" + o.content;
+          announcements.appendChild(container);
         });
         loader.html("Loaded announcements!");
         loader.removeClass("alert-info");
