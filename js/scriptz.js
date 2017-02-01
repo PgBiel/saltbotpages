@@ -36,7 +36,15 @@ window.getAnnouncements = function() {
         }, 5000);
       }
       if (ann) {
-        var sh = new showdown.Converter({simplifiedAutoLink: true, excludeTrailingPunctuationFromURLs: true, strikethrough: true, tasklists: true, requireSpaceBeforeHeadingText: true});
+        var sh = new showdown.Converter({
+          simplifiedAutoLink: true,
+          excludeTrailingPunctuationFromURLs: true,
+          strikethrough: true,
+          tasklists: true,
+          requireSpaceBeforeHeadingText: true,
+          tables: true,
+          simpleLineBreaks: true
+        });
         ann.map(o=>{
           o.title   = sh.makeHtml(o.title);
           o.content = sh.makeHtml(o.content);
