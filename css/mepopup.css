@@ -111,3 +111,9 @@ code {
 .announcement-header {
   padding-left: 40px;
 }
+
+.pulse-button {
+  border: none;
+  color: #3700E7;
+  background-color: #251458;
+}
