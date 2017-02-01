@@ -58,3 +58,18 @@
     width: 70%;
   }
 }
+
+@keyframes fade-down {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* { 
+  animation-name: fade-down;
+  animation-duration: 1s;
+}
