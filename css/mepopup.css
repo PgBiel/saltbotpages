@@ -88,14 +88,14 @@ code {
 .announcement-description {
   font-size: 12px;
   font-weight: 500;
-  color: #bbbbbb;
+  color: #777777;
   padding-left: 15px;
 }
 
 
 .announcement-description:hover {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .announcement-container, .announcement-header {
