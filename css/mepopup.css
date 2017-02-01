@@ -84,3 +84,10 @@ code {
 .announcement-title {
   font-family: "Patua One", cursive;
 }
+
+.announcement-description {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  color: #bbbbbb;
+}
