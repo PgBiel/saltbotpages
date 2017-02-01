@@ -106,10 +106,10 @@ window.getMessages = function() {
           theMessage.setAttribute("class", "salt-message fade-in-out");
           setTimeout(function() {
             theMessage.innerHTML = _.sample(messages);
-          }, 1000);
+          }, 2000);
           setTimeout(function() {
             theMessage.setAttribute("class", "salt-message");
-          }, 2000);
+          }, 4000);
         }) : "";
       }
     } else if (this.status !== 200 && this.readyState == 4) {
