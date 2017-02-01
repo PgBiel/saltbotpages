@@ -74,11 +74,11 @@
 
 @keyframes pulse {
   from {
-    margin: 7px;
+    margin: 7px 7px 7px 60px;
     padding: 2px;
   }
   to {
-    margin: 2px;
+    margin: 2px 2px 2px 60px;
     padding: 7px;
   }
 }
