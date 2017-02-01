@@ -53,7 +53,7 @@ window.getAnnouncements = function() {
           o.title.innerHTML = o.rawTitle;
           o.description = document.createElement("span");
           o.description.setAttribute("class", "announcement-description");
-          o.description.innerHTML = o.poster + " posted this " + moment(o.timestamp).fromNow() + moment(o.timestamp).format(" on MMMM Mo Y, \\at h:mm a");
+          o.description.innerHTML = o.poster + " posted this " + moment(o.timestamp).fromNow() + moment(o.timestamp).format(" on MMMM Do Y, \\at h:mm a");
           o.title.appendChild(o.description);
           o.content = sh.makeHtml(o.content);
         });
