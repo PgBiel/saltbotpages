@@ -116,5 +116,5 @@ function pgThings() {
 }
 
 $("#salt-message")[0] ? $("#salt-message")[0].addEventListener("click", function() {
-  $("#salt-message")[0] = _.sample(messages);
+  $("#salt-message")[0].innerHTML = _.sample(messages);
 }) : "";
