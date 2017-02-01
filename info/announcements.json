@@ -3,7 +3,7 @@
     "title": "Contributing",
     "timestamp": "2017-02-01T21:34:03.091Z",
     "poster": "Aplet123",
-    "content": "To contribute to this wonderful site, go to [our GitHub](https://github.com/PgBiel/saltbotpages) and slap that `new pull request` button, and send us a yummy munchy pull request!"
+    "content": "To contribute to this wonderful site, go to [our GitHub](https://github.com/PgBiel/saltbotpages) and slap that [`New Pull Request` button](https://github.com/PgBiel/saltbotpages/compare), and send us a yummy munchy pull request with whatever you want updated *(just make sure it's not announcements.json)*!  \n**Keep in mind that:**  \n - [`messages.json`](https://pgbiel.github.io/saltbotpages/info/messages.json) are where the messages are located  \n - You should test your code before making a pull request"
   },
   {
     "title": "To-do list",
