@@ -116,7 +116,7 @@ code {
   border: none;
   color: #4811F8;
   background-color: #251458;
-  padding-left: 60px;
+  margin-left: 60px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -124,7 +124,6 @@ code {
 .pulse-button:hover {
   color: #4C14FE;
   background-color: #3E2F70;
-  padding-left: 60px;
 }
 
 .salt-message {
