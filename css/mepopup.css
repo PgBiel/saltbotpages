@@ -76,3 +76,7 @@
   animation-name: fade-in;
   animation-duration: 2s;
 }
+
+code {
+  font-family: Inconsolata, "monospace";
+}
