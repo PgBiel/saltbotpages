@@ -87,9 +87,15 @@ code {
 
 .announcement-description {
   font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
+  font-weight: 500;
   color: #bbbbbb;
+  padding-left: 15px;
+}
+
+
+.announcement-description:hover {
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .announcement-container {
@@ -98,6 +104,6 @@ code {
   margin-bottom: 2px;
   margin-top: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: #bbbbbb;
+  border-bottom-color: #eeeeee;
   border-bottom-style: solid;
 }
