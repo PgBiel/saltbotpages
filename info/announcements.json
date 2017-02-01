@@ -1,7 +1,13 @@
 [
   {
+    "title": "Contributing",
+    "timestamp": "2017-02-01T21:34:03.091Z",
+    "poster": "Aplet123",
+    "content": "To contribute to this wonderful site, go to [our GitHub](https://github.com/PgBiel/saltbotpages) and slap that `new pull request` button, and send us a yummy munchy pull request!"
+  },
+  {
     "title": "To-do list",
-    "timestamp": "Wed Feb 01 2017 15:48:32 GMT-0200 (BRST)",
+    "timestamp": "2017-02-01T17:48:32.000Z",
     "poster": "PgSuper",
     "content": "Checklist:\n\n- [ ] Fix crap\n- [x] fix fix\n- [x] do nothing\n- [ ] Hello"
   },
