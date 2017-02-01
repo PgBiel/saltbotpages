@@ -98,7 +98,7 @@ code {
   color: #ffffff;
 }
 
-.announcement-container,.announcement-header {
+.announcement-container, .announcement-header {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 2px;
@@ -106,4 +106,8 @@ code {
   border-bottom-width: 1px;
   border-bottom-color: #eeeeee;
   border-bottom-style: solid;
+}
+
+.announcement-header {
+  padding-left: 40px;
 }
