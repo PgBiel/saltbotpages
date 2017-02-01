@@ -88,6 +88,10 @@
   animation-duration: 2s;
 }
 
+*:focus {
+  outline: 0;
+}
+
 code {
   font-family: "Inconsolata", monospace;
 }
