@@ -18,7 +18,7 @@ function XHR() {
 window.getAnnouncements = function() {
   var xhttp = XHR();
   var loader = $("#theloader");
-  var announcements = $("#announcements");
+  var announcements = $("#announcements")[0];
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var response = this.responseText;
