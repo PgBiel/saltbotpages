@@ -84,6 +84,8 @@ window.getAnnouncements = function() {
   xhttp.send();
 };
 
+var messages = ["We all love Salt"];
+
 window.getMessages = function() {
   var xhttp = XHR();
   var message = $("#salt-message")[0];
@@ -97,7 +99,8 @@ window.getMessages = function() {
         ann = null;
       }
       if (ann) {
-        message.innerHTML = _.sample(ann);
+        messages = ann;
+        message.innerHTML = _.sample(messages);
       }
     } else if (this.status !== 200 && this.readyState == 4) {
       console.error("Error while fetching messages (Status: " + this.status + "): " + this.statusText);
@@ -112,4 +115,6 @@ function pgThings() {
   $("#back").attr("href", origin+(/\/$/.test(origin)?"saltbotpages":"/saltbotpages"));
 }
 
-$("#salt-message")[0]?$("#salt-message")[0].addEventListener("click", getMessages):"";
+$("#salt-message")[0] ? $("#salt-message")[0].addEventListener("click", function() {
+  $("#salt-message")[0] = _.sample(messages);
+}) : "";
