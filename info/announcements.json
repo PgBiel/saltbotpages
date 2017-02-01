@@ -2,11 +2,13 @@
   {
     "title": "Test Announcement",
     "timestamp": "2017-02-01T11:30:29.488Z",
+    "poster": "Aplet123",
     "content": "***THIS IS A TEST ANNOUNCEMENT SO PLEASE IGNORE THIS***"
   },
   {
-   "title": "John Cena",
-   "timestamp": "2017-02-01T02:11:07.037Z",
-   "content": "Man trains are weird. I mean look at this: \n\n**Weird stuff**  \n```\nMan look at this weirdness\n```  \n`so weird amirite`"
+    "title": "John Cena",
+    "timestamp": "2017-02-01T02:11:07.037Z",
+    "poster": "PgSuper",
+    "content": "Man trains are weird. I mean look at this: \n\n**Weird stuff**  \n```\nMan look at this weirdness\n```  \n`so weird amirite`"
   }
 ]
