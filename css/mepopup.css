@@ -162,4 +162,5 @@ code {
   animation-duration: 2s;
   animation-iteration-count: 2;
   animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
