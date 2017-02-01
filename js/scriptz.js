@@ -45,13 +45,16 @@ window.getAnnouncements = function() {
           tables: true,
           simpleLineBreaks: true
         });
-        ann.map(o=>{
+        ann.map(o => {
           o.title   = sh.makeHtml(o.title);
           o.content = sh.makeHtml(o.content);
         });
-        ann.map(o=>{
-          announcements.html(announcements.html()+"\n\n"+o.title);
-          announcements.html(announcements.html()+"\n"+o.content);
+        ann.map(o => {
+          var dummy = document.createElement("div");
+          dummy.innerHTML = o.title;
+          dummy.children[0].setAttribute("class", "announcement-title");
+          announcements.html(announcements.html() + "\n\n" + dummy.children[0].outerHTML);
+          announcements.html(announcements.html() + "\n" + o.content);
         });
         loader.html("Loaded announcements!");
         loader.removeClass("alert-info");
