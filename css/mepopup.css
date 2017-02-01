@@ -126,3 +126,12 @@ code {
   background-color: #3E2F70;
   padding-left: 60px;
 }
+
+.salt-message {
+  color: #555555;
+  cursor: pointer;
+}
+
+.salt-message:hover {
+  color: #000000;
+}
