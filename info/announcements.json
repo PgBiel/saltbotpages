@@ -1,5 +1,11 @@
 [
   {
+    "title": "To-do list",
+    "timestamp": "Wed Feb 01 2017 15:48:32 GMT-0200 (BRST)",
+    "poster": "PgSuper",
+    "content": "Checklist:\n\n- [ ] Fix crap\n- [x] fix fix\n- [x] do nothing\n- [ ] Hello"
+  },
+  {
     "title": "Test Announcement",
     "timestamp": "2017-02-01T11:30:29.488Z",
     "poster": "Aplet123",
