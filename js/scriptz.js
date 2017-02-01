@@ -83,3 +83,28 @@ window.getAnnouncements = function() {
   xhttp.open("GET", "info/announcements.json", true);
   xhttp.send();
 };
+
+window.getMessages = function() {
+  var xhttp = XHR();
+  var message = $("#salt-message")[0];
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var response = this.responseText;
+      var ann;
+      try {
+        ann = JSON.parse(response);
+      } catch (err) {
+        ann = null;
+      }
+      if (ann) {
+        message.innerHTML = _.sample(ann);
+      }
+    } else if (this.status !== 200 && this.readyState == 4) {
+      console.error("Error while fetching messages (Status: " + this.status + "): " + this.statusText);
+    }
+  };
+  xhttp.open("GET", "info/messages.json", true);
+  xhttp.send();
+};
+
+$("#salt-message")[0].addEventListener("click", getMessages);
