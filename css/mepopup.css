@@ -155,7 +155,6 @@ code {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   font-family: "Patua One", cursive;
-  font-weight: 400;
 }
 
 .pulse-button:hover {
